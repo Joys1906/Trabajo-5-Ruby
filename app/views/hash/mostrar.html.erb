@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>Mostrar Persona</title>
+  <%= stylesheet_link_tag 'application', media: 'all' %>
+  <%= csrf_meta_tags %>
+</head>
+<body>
+  <h1>Datos de la Persona</h1>
+  <table>
+    <tr>
+      <th>Datos requeridos</th>
+      <th>Datos de Persona</th>
+    </tr>
+    <tr>
+      <td>Nombre</td>
+      <td><%= @persona[:nombre] %></td>
+    </tr>
+    <tr>
+      <td>Apellido</td>
+      <td><%= @persona[:apellido] %></td>
+    </tr>
+    <tr>
+      <td>Teléfono</td>
+      <td><%= @persona[:telefono] %></td>
+    </tr>
+    <tr>
+      <td>Correo</td>
+      <td><%= @persona[:correo] %></td>
+    </tr>
+  </table>
+</body>
+</html>
